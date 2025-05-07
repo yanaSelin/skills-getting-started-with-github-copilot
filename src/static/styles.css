@@ -86,10 +86,26 @@ section h3 {
 }
 
 .activity-card ul li {
-  margin-bottom: 8px;
+  margin-bottom: 0; /* Remove margin as it's handled by .participant */
   font-size: 14px;
   line-height: 1.5;
   color: #333;
+}
+
+.participant {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 8px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.participant:hover {
+  background-color: #f9f9f9;
 }
 
 .form-group {
